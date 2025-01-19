@@ -47,3 +47,16 @@ console.log(cars);
 const carsGasoline = [];
 const carsDiesel = [];
 const carsOthers = [];
+cars.forEach((car) => {
+    if (car.alimentazione === `Gasoline`) {
+        carsGasoline.push(car);
+    } else if (car.alimentazione === `Diesel`) {
+        carsDiesel.push(car);
+    } else if (car.alimentazione === `Gpl` || car.alimentazione === `Electric` || car.alimentazione === `Metano`) {
+        carsOthers.push(car);
+    }
+});
+
+console.log(carsGasoline);
+console.log(carsDiesel);
+console.log(carsOthers);
